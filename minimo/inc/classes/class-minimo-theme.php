@@ -22,5 +22,23 @@ class MINIMO_THEME {
 		// load class.
 		Assets::get_instance();
 		Menus::get_instance();
+
+		$this->setup_hooks();
+	}
+
+	/**
+	 * Setup hooks.
+	 */
+	protected function setup_hooks() {
+		// actions and filters.
+
+		add_action( 'after_setup_theme', array( $this, 'setup_theme' ) );
+	}
+
+	/**
+	 * Setup theme components.
+	 */
+	public function setup_theme() {
+		add_theme_support( 'post-thumbnails' );
 	}
 }

@@ -1613,7 +1613,7 @@ body {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.6;
   color: #626262;
 }
 
@@ -1639,6 +1639,10 @@ p:last-child {
 
 a {
   text-decoration: none;
+}
+
+.spacing-col-1 > [class*=col-] {
+  margin-bottom: 100px;
 }
 
 .va-header-wrapper {
@@ -1669,6 +1673,34 @@ a {
   font-size: 14px;
   text-transform: uppercase;
   color: inherit;
+}
+
+.va-post-img {
+  margin-bottom: 30px;
+}
+.va-post-img img {
+  width: 100%;
+}
+
+.va-category {
+  margin-bottom: 30px;
+}
+.va-category a {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #b4ad9e;
+}
+
+.va-post-title {
+  margin-bottom: 30px;
+}
+.va-post-title h4 {
+  margin-bottom: 0;
+}
+.va-post-title a {
+  color: #626262;
 }
 
 .va-main-footer {
@@ -1710,11 +1742,4 @@ a {
 }
 .va-social-widgets i:not(:last-child) {
   margin-right: 5px;
-}
-
-.va-category {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  color: #b4ad9e;
 }

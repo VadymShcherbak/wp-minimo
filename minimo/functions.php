@@ -1,4 +1,9 @@
 <?php
+/**
+ * Main functions theme
+ *
+ * @package Minimo
+ */
 
 if ( ! defined( 'VA_MINIMO_DIR_PATH' ) ) {
 	define( 'VA_MINIMO_DIR_PATH', untrailingslashit( get_template_directory() ) );
